@@ -7,10 +7,10 @@ import {ClaimMinter} from "../src/ClaimMinter.sol";
 /// @notice Deploys ClaimMinter to Base Mainnet, Base Sepolia, or Status Network Sepolia
 contract Deploy is Script {
     // ERC-8004 Identity Registry addresses
-    // Base Mainnet: https://www.8004scan.io/
-    address constant REGISTRY_BASE_MAINNET  = 0x4200000000000000000000000000000000000069; // placeholder
-    address constant REGISTRY_BASE_SEPOLIA  = 0x4200000000000000000000000000000000000069; // placeholder
-    address constant REGISTRY_STATUS_SEPOLIA = address(0); // mock for Status Network
+    // Confirmed from registration tx 0xa9e0afe...
+    address constant REGISTRY_BASE_MAINNET  = 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432;
+    address constant REGISTRY_BASE_SEPOLIA  = 0x8004A169FB4a3325136EB29fA0ceB6D2e539a432; // confirm before use
+    address constant REGISTRY_STATUS_SEPOLIA = address(0); // mock registry (no ERC-8004 on Status testnet)
 
     function run() external {
         uint256 chainId = block.chainid;

@@ -1,0 +1,10 @@
+{
+  "transactions": [
+    {
+      "rpc": "https://public.sepolia.rpc.status.network"
+    },
+    {
+      "rpc": "https://public.sepolia.rpc.status.network"
+    }
+  ]
+}
