@@ -1,0 +1,14 @@
+{
+  "sessionToken": "eweSj2DY18RRmgvOvdg8-AGbiQLAgeSKfiO6wLrcZv_6qFs89rCEDiP0tGcJTMJ9kJRPk-uOe5wY7rEAXBCjpDXkjvR_lRc9kmwQQW0oH5KbVZKCXwZACzOYRxDphPx4TvhO6Y8g3vX-IHrnNCic91SQ8hW1GDhsQy15rUdrJ1pDIZ8xFbGshKXZ33GB-DcnrOLKS5TGDatk-rjg4M0Cr2XHjuzGwSDjAfMtWxs_uw3d5vTjqf6DddE53eTEkjzr1VyEGYC4m4unSLJNMwXy-UytrUdnVdsc03gMIp_kAySwGJ_a6C-QH-CEHWTOd0QnJTEJTyH8aRuv4AsCARHMuDdLwFMGqYGhtlLUz6NlOLyWi3-H4uCdNuPr16zC2Aey-VuyT-EWp-CLT7dy1HnuDVbeJpKKkRGipu095AlJUJLRN4H6V5lkRxX_DUsffI5y34ZzSrSvO5CdIKpHHcpwYzvYh05-sM2HE1K9ZCH6g6Sbp3cfDfPKA8F_VdKXIszZSQPgXFYIMY5gsZ8GE9c-D9nb6GJmTBzV2g0JhJVszkkC5zmkbSxZBJRIsC2vULFJ-0qFnDp960zDqHwJvFdIwbOBOoHYk7T5VvAY5qNyBiTE-Ne7aA0gjpqOKwbv_9I6dJNIQDdiuMw4NZ8TTC7OLMcqFD-bUXc-OMoWT03zl6vtiKrrECbNzsSwAi8Dy2Raxqvmx8hOX-AsF5QTt54NAhHWSAybqRf_Afh20omHz6MTKhT0Zh0o6q3FpJYATZOvtcNWaT0J2b5SDbnNCZ-16zfpbjh53XBxgqbtgG0JoTcl1eUZAWpoTaGtdiWfltvJHJRf0-l34mrpN2SFVpjzAe8iuDI-xdyqD0nTCDzuxrCt36B0RKj1YY-I3wYjSXxwyMn4sJNcBJopeVEXzopCAwy54Bv1B-SRI7sOSiPTWTaGi9-WvQ-L7MmgG9ZHdRL3SVMbq2TooTMzmAANVjwrCK_Fx_GTNY716VDbQx3QhbSnSRZ24Z_hRX8B2oZVyDDO_QWwJXp7O1CitBny9lwbgb2y2TbsSuksHem6qU_LjEpIQ1bLE1LXrXFxpIbfr-Ofk_FGWhio_BEUUC1ebcsJIFcedkm2yQVNRcuhj88Q4477DWyoKN6j3S-ZDyUzRmn0_blnV5e2YIYpCUwXhnp_aXZwi90a47kHvUn9WV366pZ2saHnI6rEosl36FB_6Dy0wUm38DaJLrrk4koQuBcbYutaCadjh_ptfQpUYKNibpETl48N4FXck_rxu7Ow1kZVlnaBo_967kufrSTeKEWmyuWitWjzHCDdL8G2xk-RdwO8eLfKn9onn4Exz62COdKFA2B81cfH_GvNKZLFthmGX1RlVueNjW6lbh7IXn9TWoy5rVNJbIyOyBEbH01j27YMBw619o5KJG_qdmppOpZKAQ",
+  "stage": "qr-ready",
+  "deepLink": "https://redirect.self.xyz?selfApp=%7B%22sessionId%22%3A%22f614073d-e5cf-4d2b-ad21-e479db0f2c39%22%2C%22userIdType%22%3A%22hex%22%2C%22devMode%22%3Afalse%2C%22endpointType%22%3A%22staging_celo%22%2C%22header%22%3A%22%22%2C%22logoBase64%22%3A%22https%3A%2F%2Fi.postimg.cc%2FmrmVf9hm%2Fself.png%22%2C%22deeplinkCallback%22%3A%22%22%2C%22disclosures%22%3A%7B%22ofac%22%3Atrue%2C%22minimumAge%22%3A18%7D%2C%22chainID%22%3A11142220%2C%22version%22%3A2%2C%22userDefinedData%22%3A%22K42dd69c10690726a1315b8091fc9ab291e8ffd2ed13fe94b9973077b4627da951abd96e2af69560659f634cc317a0174c2a1970896c1239493211244bc5f35c695e265e1835ed94d02f7fc59424bc638c71975ace1b%22%2C%22appName%22%3A%22Self%20Agent%20ID%22%2C%22scope%22%3A%22self-agent-id%22%2C%22endpoint%22%3A%220x043DaCac8b0771DD5b444bCC88f2f8BBDBEdd379%22%2C%22userId%22%3A%22be9fa9041160a990c486e1567380fa3da6b49162%22%7D",
+  "agentAddress": "0x2dd69c10690726A1315B8091FC9Ab291E8FFd2Ed",
+  "expiresAt": "2026-03-13T23:37:34.956Z",
+  "timeRemainingMs": 1799999,
+  "humanInstructions": [
+    "Open the Self app on your phone.",
+    "Scan the QR code displayed below or open the deep link.",
+    "Follow the prompts to scan your passport.",
+    "Wait for the proof to be submitted on-chain."
+  ]
+}
