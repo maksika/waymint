@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Foundry build artifacts
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Environment
+.env
+.env.*
+*.env
+
+# Self session (contains sensitive registration tokens)
+self/.self-session.json
+
+# OS
+.DS_Store
