@@ -27,7 +27,7 @@ async function init() {
 
   const session = await requestRegistration({
     mode: "linked",             // human wallet = agent key (EVM mode)
-    network: "testnet",
+    network: "mainnet",
     humanAddress: agentAddress, // same wallet acts as human backer for demo
     disclosures: {
       minimumAge: 18,

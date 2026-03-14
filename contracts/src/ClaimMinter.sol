@@ -113,42 +113,43 @@ contract ClaimMinter {
     // -------------------------------------------------------------------------
 
     /// @notice Mint a SelfLinked certificate.
-    ///         Requires the caller to be registered in Self Protocol's SelfAgentRegistry
-    ///         (proof can be expired — just needs registration).
+    ///         selfAgentKey is the 32-byte key registered in Self Protocol's
+    ///         SelfAgentRegistry (may differ from msg.sender for SDK-managed agents).
     function mintSelfLinkedCert(
+        bytes32 selfAgentKey,
         string calldata agentURI,
         string calldata agentProvider
     ) external returns (uint256 certId) {
-        bytes32 agentKey = _walletAgentKey(msg.sender);
-        if (agentKeyToCert[agentKey] != 0) revert AlreadyCertified(agentKey);
+        if (agentKeyToCert[selfAgentKey] != 0) revert AlreadyCertified(selfAgentKey);
 
-        uint256 selfAgentId = selfRegistry.getAgentId(agentKey);
+        uint256 selfAgentId = selfRegistry.getAgentId(selfAgentKey);
         if (selfAgentId == 0) revert NotRegisteredInSelf();
 
         uint256 nullifier = selfRegistry.getHumanNullifier(selfAgentId);
 
-        return _mint(msg.sender, agentKey, agentURI, agentProvider,
+        return _mint(msg.sender, selfAgentKey, agentURI, agentProvider,
                      VerificationLevel.SelfLinked, selfAgentId, nullifier);
     }
 
     /// @notice Mint a SelfVerified certificate — the highest trust tier.
-    ///         Requires a current, non-expired ZK proof in Self Protocol.
+    ///         selfAgentKey is the 32-byte key registered in Self Protocol's
+    ///         SelfAgentRegistry. The ZK proof must be current (non-expired).
     ///         This is the load-bearing Self Protocol integration:
-    ///         isVerifiedAgent() must return true on the live SelfAgentRegistry.
+    ///         isVerifiedAgent() is called live on SelfAgentRegistry.
     function mintSelfVerifiedCert(
+        bytes32 selfAgentKey,
         string calldata agentURI,
         string calldata agentProvider
     ) external returns (uint256 certId) {
-        bytes32 agentKey = _walletAgentKey(msg.sender);
-        if (agentKeyToCert[agentKey] != 0) revert AlreadyCertified(agentKey);
+        if (agentKeyToCert[selfAgentKey] != 0) revert AlreadyCertified(selfAgentKey);
 
         // Load-bearing Self Protocol check — not decorative
-        if (!selfRegistry.isVerifiedAgent(agentKey)) revert ProofExpiredOrInvalid();
+        if (!selfRegistry.isVerifiedAgent(selfAgentKey)) revert ProofExpiredOrInvalid();
 
-        uint256 selfAgentId = selfRegistry.getAgentId(agentKey);
+        uint256 selfAgentId = selfRegistry.getAgentId(selfAgentKey);
         uint256 nullifier   = selfRegistry.getHumanNullifier(selfAgentId);
 
-        return _mint(msg.sender, agentKey, agentURI, agentProvider,
+        return _mint(msg.sender, selfAgentKey, agentURI, agentProvider,
                      VerificationLevel.SelfVerified, selfAgentId, nullifier);
     }
 
